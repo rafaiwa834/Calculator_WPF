@@ -46,33 +46,39 @@
         <TextBox Grid.Row="0" Grid.Column="3" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="20px" Text="{Binding ScreenLastVal}" IsReadOnly="True"/>
         
         <TextBox Grid.Row="1" Grid.ColumnSpan="4" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="20px" Text="{Binding ScreenValUp}" IsReadOnly="True"/>
+        
         <TextBox Grid.Row="2" Grid.ColumnSpan="4" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="32px" Text="{Binding ScreenVal}" IsReadOnly="True"/>
         
-
         <Button Grid.Row="3" Grid.Column="0" Content="MR"  Command="{Binding DisplaySavedValCommand}"/>
         <Button Grid.Row="3" Grid.Column="1" Content="M+"  Command="{Binding AddToSavedValCommand}"/>
         <Button Grid.Row="3" Grid.Column="2" Content="M-"  Command="{Binding SubWithSavedValCommand}"/>
         <Button Grid.Row="3" Grid.Column="3" Content="MS"  Command="{Binding SaveValueCommand}"/>
+        
         <Button Grid.Row="4" Grid.Column="0" Content="" />
         <Button Grid.Row="4" Grid.Column="1" Content="CE"  Command="{Binding ClearInputScreenCommand}"/>
         <Button Grid.Row="4" Grid.Column="2" Content="C"   Command="{Binding ClearScreenCommand}"/>
         <Button Grid.Row="4" Grid.Column="3" Content="DEL" Command="{Binding DeleteLastNumberCommand}"/>
+        
         <Button Grid.Row="5" Grid.Column="0" Content="1/x"     Command="{Binding InverseCommand}"/>
         <Button Grid.Row="5" Grid.Column="1" Content="x^2"     Command="{Binding PowerCommand}"/>
         <Button Grid.Row="5" Grid.Column="2" Content="sqrt(x)" Command="{Binding SquareRootCommand}"/>
         <Button Grid.Row="5" Grid.Column="3" Content="/"  Command="{Binding OperationCommand}" CommandParameter="/"/>
+        
         <Button Grid.Row="6" Grid.Column="0" Content="7"  Command="{Binding AddNumberCommand}" CommandParameter="7" />
         <Button Grid.Row="6" Grid.Column="1" Content="8"  Command="{Binding AddNumberCommand}" CommandParameter="8" />
         <Button Grid.Row="6" Grid.Column="2" Content="9"  Command="{Binding AddNumberCommand}" CommandParameter="9"/>
         <Button Grid.Row="6" Grid.Column="3" Content="x"  Command="{Binding OperationCommand}" CommandParameter="*"/>
+        
         <Button Grid.Row="7" Grid.Column="0" Content="4"  Command="{Binding AddNumberCommand}" CommandParameter="4"/>
         <Button Grid.Row="7" Grid.Column="1" Content="5"  Command="{Binding AddNumberCommand}" CommandParameter="5"/>
         <Button Grid.Row="7" Grid.Column="2" Content="6"  Command="{Binding AddNumberCommand}" CommandParameter="6"/>
         <Button Grid.Row="7" Grid.Column="3" Content="-"  Command="{Binding OperationCommand}" CommandParameter="-"/>
+        
         <Button Grid.Row="8" Grid.Column="0" Content="1"  Command="{Binding AddNumberCommand}" CommandParameter="1"/>
         <Button Grid.Row="8" Grid.Column="1" Content="2"  Command="{Binding AddNumberCommand}" CommandParameter="2"/>
         <Button Grid.Row="8" Grid.Column="2" Content="3"  Command="{Binding AddNumberCommand}" CommandParameter="3"/>
         <Button Grid.Row="8" Grid.Column="3" Content="+"  Command="{Binding OperationCommand}" CommandParameter="+"/>
+        
         <Button Grid.Row="9" Grid.Column="0" Content="+/-" Command="{Binding ChangeSignCommand}"/>
         <Button Grid.Row="9" Grid.Column="1" Content="0"   Command="{Binding AddNumberCommand}" CommandParameter="0"/>
         <Button Grid.Row="9" Grid.Column="2" Content=","   Command="{Binding AddNumberCommand}" CommandParameter=","/>
